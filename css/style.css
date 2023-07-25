@@ -37,7 +37,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 
 .bg_services { position: absolute; top: 550px; left: -100px; width: 1900px; height: 1295.44px; fill: linear-gradient(90deg, #EE69FA 46.15%); filter: blur(218px); }
 
-.garant { max-width: 1920px; height: 400px; margin-top: 150px; background-image: url("../image/garant-bg.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
+.garant { max-width: 1920px; height: 400px; margin-top: 150px; background-image: url("/Nakrutka/image/garant-bg.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
 .garant__inner { position: relative; display: flex; align-items: center; }
 .garant__inner-title { display: inline-block; width: 320px; transform: rotate(-90deg); color: #FFF; text-align: center; font-family: 'Days One'; font-size: 48px; font-style: normal; font-weight: 400; line-height: 168px; margin-left: 28%; margin-top: 115px; }
 .garant__inner-img { position: absolute; top: 0; left: 0; }
@@ -66,10 +66,10 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 .footer__img { position: absolute; right: 0; bottom: 0; }
 
 .email { text-align: center; font-family: Baloo 2; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; position: relative; }
-.email::before { content: url(../image/email.svg); position: absolute; left: -32px; top: -5px; }
+.email::before { content: url(/Nakrutka/image/email.svg); position: absolute; left: -32px; top: -5px; }
 
 .tel { display: flex; flex-direction: column; text-align: center; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; position: relative; }
-.tel::before { content: url(../image/tel.svg); position: absolute; top: 8px; left: -32px; }
+.tel::before { content: url(/Nakrutka/image/tel.svg); position: absolute; top: 8px; left: -32px; }
 
 @media (max-width: 1910px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { padding-bottom: 149px; }
