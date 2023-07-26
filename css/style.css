@@ -21,7 +21,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 .menu__item { color: #FFF; font-family: "Baloo 2"; font-size: 18px; font-style: normal; font-weight: 700; line-height: 24px; }
 
 .services { position: relative; height: 100vh; }
-.services__inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 80px; max-width: 1424px; margin: 100px auto; }
+.services__inner { display: flex; justify-content: space-between; gap: 30px; padding: 200px 0; }
 .services__card { display: flex; width: 224px; flex-direction: column; align-items: center; flex-wrap: wrap; gap: 22px; z-index: 1; }
 .services__card img { width: 80px; height: 80px; }
 .services__card-info { display: none; color: #FFF; text-align: center; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
@@ -41,7 +41,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 
 .bg_services { position: absolute; top: 550px; left: -100px; width: 1900px; height: 1295.44px; fill: linear-gradient(90deg, #EE69FA 46.15%); filter: blur(218px); }
 
-.garant { max-width: 1920px; height: 400px; margin-top: 250px; background-image: url("../image/garant-bg.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
+.garant { max-width: 1920px; height: 400px; margin-top: 100px; background-image: url("../image/garant-bg.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
 .garant__inner { position: relative; display: flex; align-items: center; }
 .garant__inner-title { display: inline-block; width: 320px; transform: rotate(-90deg); color: #FFF; text-align: center; font-family: 'Days One'; font-size: 48px; font-style: normal; font-weight: 400; line-height: 168px; margin-left: 28%; margin-top: 115px; }
 .garant__inner-img { position: absolute; top: 0; left: 0; }
