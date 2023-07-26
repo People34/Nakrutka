@@ -20,16 +20,20 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 .menu__list { display: flex; gap: 93px; }
 .menu__item { color: #FFF; font-family: "Baloo 2"; font-size: 18px; font-style: normal; font-weight: 700; line-height: 24px; }
 
-.services { position: relative; height: 100vh; padding: 220px; }
-.services__inner { display: flex; justify-content: space-between; max-width: 1424px; }
+.services { position: relative; height: 100vh; }
+.services__inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 80px; max-width: 1424px; margin: 100px auto; }
 .services__card { display: flex; width: 224px; flex-direction: column; align-items: center; flex-wrap: wrap; gap: 22px; z-index: 1; }
+.services__card img { width: 80px; height: 80px; }
 .services__card-info { display: none; color: #FFF; text-align: center; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
-.services__card-btn { display: flex; justify-content: space-between; gap: 10px; }
+.services__card-btn { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .services__card-button { display: flex; padding: 4px 8px; justify-content: center; align-items: center; border-radius: 8px; border: 1px solid #7F0781; background: transparent; color: #FFF; font-family: 'Baloo 2'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
 .services__card-button:hover { background: #7F0781; box-shadow: 0px 0px 4px 0px #FDBEFF; }
 .services__card-input { display: flex; width: 224px; height: 32px; padding: 4px 8px; justify-content: center; align-items: center; gap: 10px; border-radius: 8px; background: #7F0781; box-shadow: 0px 0px 4px 0px #FDBEFF; border: none; }
 .services__card-input::placeholder { text-align: center; color: #FFF; }
 .services__card-done { width: 224px; border: none; padding: 8px; border-radius: 8px; background: #FFF; color: #0E0211; font-family: 'Baloo 2'; font-size: 20px; font-style: normal; font-weight: 400; line-height: 24px; }
+
+.discord .services__card-btn { flex-wrap: wrap; }
+.discord .services__card-row { display: flex; align-items: center; gap: 10px; }
 
 .active { background: #7F0781; box-shadow: 0px 0px 4px 0px #FDBEFF; }
 
@@ -37,7 +41,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 
 .bg_services { position: absolute; top: 550px; left: -100px; width: 1900px; height: 1295.44px; fill: linear-gradient(90deg, #EE69FA 46.15%); filter: blur(218px); }
 
-.garant { max-width: 1920px; height: 400px; margin-top: 150px; background-image: url("../image/garant-bg.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
+.garant { max-width: 1920px; height: 400px; margin-top: 250px; background-image: url("../image/garant-bg.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
 .garant__inner { position: relative; display: flex; align-items: center; }
 .garant__inner-title { display: inline-block; width: 320px; transform: rotate(-90deg); color: #FFF; text-align: center; font-family: 'Days One'; font-size: 48px; font-style: normal; font-weight: 400; line-height: 168px; margin-left: 28%; margin-top: 115px; }
 .garant__inner-img { position: absolute; top: 0; left: 0; }
@@ -73,10 +77,12 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 
 @media (max-width: 1910px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { padding-bottom: 149px; }
-  .header__inner { height: 100vh; display: flex; flex-wrap: wrap; justify-content: space-between; flex-direction: row; } }
+  .header__inner { height: 100vh; display: flex; flex-wrap: wrap; justify-content: space-between; flex-direction: row; }
+  .garant { margin-top: 600px; } }
 @media (max-width: 1750px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { font-size: 74px; margin-top: 320px; }
   .bg_services { display: none; }
+  .garant { margin-top: 650px; }
   .footer { margin-top: 200px; } }
 @media (max-width: 1600px) { .header { background-position: center; background-size: cover; }
   .garant__inner-img { display: none; }
@@ -92,7 +98,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
   .header__inner-title { font-size: 50px; margin-top: 320px; }
   .services { padding: 0; margin-top: 15px; }
   .services__inner { justify-content: space-evenly; gap: 330px; }
-  .garant { margin-top: 735px; }
+  .garant { margin-top: 2650px; }
   .garant__inner-title { margin-left: 7%; }
   .footer { margin-top: 200px; } }
 @media (max-width: 1206px) { .header { background-position: center; background-size: cover; }
@@ -103,7 +109,6 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
 @media (max-width: 1045px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { font-size: 40px; }
   .services { padding: 0; margin-top: 15px; }
-  .garant { margin-top: 820px; }
   .footer { margin-top: 265px; } }
 @media (max-width: 925px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { font-size: 40px; }
@@ -114,12 +119,13 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
   .header__inner-title { font-size: 34px; }
   .services__inner { gap: 40px; }
   .services { padding: 0; margin-top: 15px; }
-  .garant { margin-top: 500px; }
+  .garant { margin-top: 1250px; }
   .footer { margin-top: 535px; } }
 @media (max-width: 750px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { font-size: 28px; }
-  .services { padding: 0; margin-top: 15px; } }
-@media (max-width: 700px) { .garant { background-position: center; background-size: cover; margin-top: 1500px; }
+  .services { padding: 0; margin-top: 15px; }
+  .garant { margin-top: 1750px; } }
+@media (max-width: 700px) { .garant { background-position: center; background-size: cover; }
   .footer { margin-top: 1393px; } }
 @media (max-width: 635px) { .header { background-position: center; background-size: cover; }
   .header__inner-title { font-size: 24px; }
@@ -127,6 +133,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
   .menu__list { display: flex; gap: 60px; }
   .services { padding: 0; margin-top: 15px; }
   .services__inner { flex-direction: column; align-items: center; }
+  .garant { margin-top: 3480px; }
   .garant__inner-title { margin-left: 0%; }
   .garant__inner-info__title { font-size: 18px; }
   .garant__inner-info__subtitle { font-size: 10px; }
@@ -144,5 +151,7 @@ span { display: flex; justify-content: center; color: #FFF; font-family: "Baloo 
   .garant__inner-info { margin: 0; }
   .footer__inner { flex-direction: column; margin-top: 1338px; align-items: center; } }
 @media (max-width: 380px) { .header__inner-title { font-size: 14px; } }
+.oferta { max-width: 1200px; margin: 0 auto; text-align: start; font-family: Baloo 2; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; color: #FFF; }
+.oferta h1 { text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
